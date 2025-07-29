@@ -50,6 +50,8 @@ export default cartSlice.reducer;
 //   store.cart.cart.reduce((acc, item) => acc + item.totalPrice, 0);
 // }
 
+export const getCart = (store) => store.cart.cart;
+
 export const getTotalCartQuantity = (store) =>
   store.cart.cart.reduce((acc, item) => acc + item.quantity, 0);
 
